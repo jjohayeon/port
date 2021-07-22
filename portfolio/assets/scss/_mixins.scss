@@ -1,0 +1,26 @@
+//가상요소
+@mixin content {
+    content: '';
+    position: absolute;
+}
+
+//상단 정렬
+@mixin fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+//가운데 정렬
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//가운데 정렬2
+@mixin center2 {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
